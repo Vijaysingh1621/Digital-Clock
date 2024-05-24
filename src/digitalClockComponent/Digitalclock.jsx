@@ -24,13 +24,13 @@ useEffect(() => {
     
     let backgroundImage;
     if (hours >= 5 && hours < 12 && meridiem === "AM") {
-      backgroundImage = "url(../../src/assets/morningclock.jpg)";
+      backgroundImage = "url(../../../../public/assets/morningclock.jpg)";
     } else if (hours >= 12 && hours < 16 && meridiem === "PM") {
-      backgroundImage = "url(../../src/assets/noonclock.jpg)";
+      backgroundImage = "url(../../../../public/assets/noonclock.jpg)";
     } else if (hours >= 16 && hours < 21 && meridiem === "PM") {
-      backgroundImage = "url(../../src/assets/eveningclock.jpg)";
+      backgroundImage = "url(../../../../public/assets/eveningclock.jpg)";
     } else {
-      backgroundImage = "url(../../src/assets/nightclock.jpg)";
+      backgroundImage = "url(../../../../public/assets/nightclock.jpg)";
     }
 
     document.body.style.backgroundImage = backgroundImage;
